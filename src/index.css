@@ -54,15 +54,19 @@ button {
   display: block;
   width: 100%;
 }
-button:hover {
+
+button:not(:disabled):hover {
   background: #f3f3f3;
 }
+
 button:active {
   border-color: #646cff;
 }
+
 label {
   display: block;
 }
+
 .wrapper {
   background: #fff;
   padding: 30px;
@@ -70,20 +74,24 @@ label {
   display: block;
   border-radius: 10px;
 }
+
 .row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
   align-items: center;
 }
+
 input {
   border: 1px solid #ccc;
   border-radius: 6px;
   padding: 10px;
 }
+
 input:focus {
   border-color: #646cff;
 }
+
 .errorMessage {
   color: red;
   display: block;
